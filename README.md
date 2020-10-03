@@ -2,6 +2,8 @@
 
 A new Flutter project with WordPres API REST
 
+![Alt text](https://dev.1futurista.com/wp-content/uploads/sites/4/2020/04/miniatura-flutter-wordpressL.jpg)
+
 ## Comencemos
 
 Este proyecto se ha hecho con Flutter y WordPress wp-json,
