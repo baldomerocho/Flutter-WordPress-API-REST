@@ -2,11 +2,19 @@
 
 A new Flutter project with WordPres API REST
 
-## Getting Started
+![Alt text](https://dev.1futurista.com/wp-content/uploads/sites/4/2020/04/miniatura-flutter-wordpressL.jpg)
 
-This project is a starting point for a Flutter application.
+## Comencemos
 
-A few resources to get you started if this is your first Flutter project:
+Este proyecto se ha hecho con Flutter y WordPress wp-json,
+
+En la ruta: http://192.168.1.2/lugaresasombrosos/wp-json/wp/v2/posts?_embed
+
+deberás reemplazar "http://192.168.1.2/lugaresasombrosos" por tu dominio o o IP, url en todo caso.
+
+Nota: Si usas HTTP en lugar de HTTPS puede ocasionarte problemas a partir de la version 1.22 de flutter, por lo que se recomienda instalar un certificado autofirmado en tu servidor local, o un certificado SSL en el servidor.
+
+### Si necesitas ayuda o guia, consuta aquí:
 
 - [Ver publicación](https://dev.1futurista.com/flutter/crear-aplicacion-flutter-con-rest-api-de-wordpress-54-minutos/)
 
