@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:html/parser.dart';
+import 'package:lugaresasombrosos/screens/buscador.dart';
 import 'package:lugaresasombrosos/screens/categorias.dart';
 import 'package:lugaresasombrosos/screens/post.dart';
 import 'package:lugaresasombrosos/widgets/menu.dart';
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final textiTheme = Theme.of(context).textTheme;
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Lugares Asombrosos',
       theme: ThemeData(
         appBarTheme: AppBarTheme(
@@ -72,6 +74,14 @@ class HomePage extends StatelessWidget {
       drawer: menu(context),
       appBar: AppBar(
         title: Text('Lugares Asombrosos Blogs'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: (){
+              showSearch(context: context, delegate: BuscadorWP());
+            },
+          )
+        ],
       ),
       body: ListView(
         children: [
